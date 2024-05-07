@@ -20,6 +20,7 @@ const Homepage = () => {
   if (!data) return <Spin size="large" />;
 
 
+
   // const { total, totalCoins, totalMarkets, totalExchanges, totalMarketCap, total24hVolume } = data.stats;
   let globalStats=data?.data?.stats;
   return (

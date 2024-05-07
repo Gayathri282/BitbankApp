@@ -41,7 +41,7 @@ console.log('news'+cryptoNews);
           </Select>
         </Col>
       )} */}
-      {cryptoNews.yahoo.map((news) => (
+      {cryptoNews?.yahoo.map((news) => (
         <Col xs={24} sm={12} lg={6} key={news.id}>
           <Card hoverable className='news-card'>
             <a href={news.url} target='_blank' rel='noopener noreferrer'>
