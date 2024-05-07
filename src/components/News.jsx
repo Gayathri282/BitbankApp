@@ -12,7 +12,7 @@ const News = ({ simplified }) => {
   const { data: cryptoData } = useGetCryptosQuery(100);
   const [selectedCoin, setSelectedCoin] = useState('');
   const { data: cryptoNews, isLoading } = useGetCryptoNewsQuery({ count });
-
+console.log('news'+cryptoNews);
   if (isLoading) return <Spin size="large" />;
 
   const filterOption = (input, option) => {
@@ -41,19 +41,19 @@ const News = ({ simplified }) => {
           </Select>
         </Col>
       )} */}
-      {cryptoNews.data.slice(0, count).map((news) => (
+      {cryptoNews.yahoo.map((news) => (
         <Col xs={24} sm={12} lg={6} key={news.id}>
           <Card hoverable className='news-card'>
             <a href={news.url} target='_blank' rel='noopener noreferrer'>
               <div className='news-image-container'>
                 <h3>{news.title}</h3><br/>
-                <img src={news?.thumbnail} alt='news' style={{ width: '50px', height: '50px' }} />
+                {/* <img src={news?.thumbnail} alt='news' style={{ width: '50px', height: '50px' }} /> */}
               </div>
               <p>{news.description.length > 100 ? `${news.description.substring(0, 100)}...` : news.description }</p>
               <div className='provider-container'>
                 <div>
-                  <Avatar src={news?.thumbnail} />
-                  <Text>{moment(news.createdAt).startOf('ss').fromNow()}</Text>
+                  {/* <Avatar src={news?.thumbnail} /> */}
+                  <Text>{moment(news.date).startOf('ss').fromNow()}</Text>
                 </div>
               </div>
             </a>
