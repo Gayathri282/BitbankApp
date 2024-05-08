@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/BitbankApp/static/css/main.5f25d716.css",
-    "main.js": "/BitbankApp/static/js/main.0a7307bb.js",
-    "static/media/logo.png": "/BitbankApp/static/media/logo.f4eba0b7515ecf1e6aa8.png",
-    "index.html": "/BitbankApp/index.html",
-    "main.5f25d716.css.map": "/BitbankApp/static/css/main.5f25d716.css.map",
-    "main.0a7307bb.js.map": "/BitbankApp/static/js/main.0a7307bb.js.map"
+    "main.css": "/static/css/main.5f25d716.css",
+    "main.js": "/static/js/main.de759e6c.js",
+    "static/media/logo.png": "/static/media/logo.f4eba0b7515ecf1e6aa8.png",
+    "index.html": "/index.html",
+    "main.5f25d716.css.map": "/static/css/main.5f25d716.css.map",
+    "main.de759e6c.js.map": "/static/js/main.de759e6c.js.map"
   },
   "entrypoints": [
     "static/css/main.5f25d716.css",
-    "static/js/main.0a7307bb.js"
+    "static/js/main.de759e6c.js"
   ]
 }
