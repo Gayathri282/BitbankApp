@@ -41,18 +41,18 @@ console.log('news'+cryptoNews);
           </Select>
         </Col>
       )} */}
-      {cryptoNews?.yahoo.map((news) => (
+      {cryptoNews?.data.slice(0,count).map((news) => (
         <Col xs={24} sm={12} lg={6} key={news.id}>
           <Card hoverable className='news-card'>
             <a href={news.url} target='_blank' rel='noopener noreferrer'>
               <div className='news-image-container'>
                 <h3>{news.title}</h3><br/>
-                {/* <img src={news?.thumbnail} alt='news' style={{ width: '50px', height: '50px' }} /> */}
+                <img src={news?.thumbnail} alt='news' style={{ width: '50px', height: '50px' }} />
               </div>
               <p>{news.description.length > 100 ? `${news.description.substring(0, 100)}...` : news.description }</p>
               <div className='provider-container'>
                 <div>
-                  {/* <Avatar src={news?.thumbnail} /> */}
+                  <Avatar src={news?.thumbnail} />
                   <Text>{moment(news.date).startOf('ss').fromNow()}</Text>
                 </div>
               </div>
